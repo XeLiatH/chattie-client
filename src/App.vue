@@ -32,7 +32,7 @@
         target="_blank"
         text
       >
-        <span class="mr-2">Latest Release</span>
+        <span class="mr-2">Latest Releaseee</span>
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
     </v-app-bar>
@@ -45,6 +45,7 @@
 
 <script>
 import HelloWorld from './components/HelloWorld';
+import io from 'socket.io-client';
 
 export default {
   name: 'App',
@@ -54,7 +55,7 @@ export default {
   },
 
   data: () => ({
-    //
+    socket: io('http://localhost:8888')
   }),
 };
 </script>
